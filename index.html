@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style css -->
+     <style>
+        body{
+            margin: 300px auto;
+            max-width: 200px;
+            background-color: #000002;
+        }
+        .logo{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            border-top: 15px solid #ea4335;
+            border-right: 15px solid #4285f4;
+            border-bottom: 15px solid #34a853;
+            border-left: 15px solid #fbbc05;
+            border-radius: 50%;
+        }
+        .logo::before{
+            content: "";
+            position: absolute;
+            background-color: #4285f4;
+            width: 40px;
+            height: 15px;
+            top: 50%;
+            right: -13px;
+            transform: translateY(-50%);
+        }
+        .logo::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -18px;
+            right: -18px;
+            border-top: 61px solid transparent;
+            border-right: 71px solid black;
+        }
+     </style>
+</head>
+<body>
+    <div class="logo"></div>
+</body>
+</html>
